@@ -7,12 +7,8 @@ sourcepath=./sample/source/spring-petclinic
 sourceapp=spring-source-17
 sourcepathall=./sample/source/spring-petclinic-all
 sourceappall=spring-source-all-17
-
 repoapp=spring-repo-17
-repourl=https://github.com/showpune/spring-petclinic
-
 repoappnoreg=spring-repo-17-no-registry
-repourl=https://github.com/showpune/spring-petclinic
 
 az containerapp up -n $sourceappall -g $rg  --environment $enviroment --source $sourcepathall --ingress external --target-port 8080 --subscription $subscription --location $location 
 echo 'Deploy with Jar'

@@ -5,3 +5,4 @@ registryserver=xxx.azurecr.io
 registryuser=xxx
 registerpass=
 location=northcentralusstage
+repourl=https://github.com/xxx/spring-petclinic
