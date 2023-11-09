@@ -30,6 +30,6 @@ echo 'Deploy with source code from git repo'
 az containerapp delete -n "${repoapp}" -g $rg --subscription $subscription --yes
 az containerapp up -n "${repoapp}" -g $rg  --environment $enviroment --repo $repourl --ingress external --target-port 8080 --subscription $subscription --location $location --registry-server $registryserver --registry-user $registryuser --registry-pass $registerpass
 
-# echo 'Deploy with source code with repo no registery'
+# echo 'Deploy with source code from repo without registery'
 # az containerapp delete -n "${repoappnoreg}" -g $rg --subscription $subscription --yes
 # az containerapp up -n "${repoappnoreg}" -g $rg  --environment $enviroment --repo $repourl --ingress external --target-port 8080 --subscription $subscription --location $location 
