@@ -6,7 +6,6 @@ registryserver=xxx.azurecr.io
 registryuser=xxx
 registerpass=xxx
 repourl=https://github.com/xxx/spring-petclinic
-
-serviceprincipalclientid=*
-serviceprincipalclientsecret=*
-serviceprincipaltenantid=*
+serviceprincipalclientid=xxx
+serviceprincipalclientsecret=xxx
+serviceprincipaltenantid=xxx
