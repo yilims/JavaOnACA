@@ -18,7 +18,4 @@ echo 'Deploy source code with local builder, please start docker engine first'
 az containerapp up -n "${sourceapp}-local" -g $rg  --environment $enviroment --source $sourcepath --ingress external --target-port 8080 --subscription $subscription --location $location --registry-server $registryserver --registry-user $registryuser --registry-pass $registerpass
 
 echo 'Deploy source code from git repo with container registery'
-az containerapp up -n "${repoapp}" -g $rg  --environment $enviroment --repo $repourl --ingress external --target-port 8080 --subscription $subscription --location $location --registry-server $registryserver --registry-user $registryuser --registry-pass $registerpass --service-principal-client-id $serviceprincipalclientid --service-principal-client-secret $serviceprincipalclientsecret --service-principal-tenant-id $serviceprincipaltenantid
-                   
-echo 'Deploy source code from git repo without container registery'
-az containerapp up -n "${repoappnoreg}" -g $rg  --environment $enviroment --repo $repourl --ingress external --target-port 8080 --subscription $subscription --location $location 
+az containerapp up -n "${repoapp}" -g $rg  --environment $enviroment --repo $repourl --ingress external --target-port 8080 --subscription $subscription --location $location --registry-server $registryserver --registry-user $registryuser --registry-pass $registerpass
