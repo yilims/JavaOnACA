@@ -6,7 +6,6 @@ jarapp=spring-jar
 sourcepath=./sample/source/spring-petclinic
 sourceapp=spring-source
 repoapp=spring-repo-with-registry
-repoappnoreg=spring-repo-no-registry
 
 echo 'Deploy Jar built with JDK 21'
 az containerapp up -n $jarapp -g $rg  --environment $enviroment --artifact $jarpath/spring-petclinic-jdk-21-3.1.0-SNAPSHOT.jar --ingress external --target-port 8080 --subscription $subscription --location $location 
