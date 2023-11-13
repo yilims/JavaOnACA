@@ -1,6 +1,5 @@
 #update the extension
-az extension remove -n containerapp
-az extension add --source ./containerapp-0.3.43-py2.py3-none-any.whl
+az upgrade --yes
 
 
 . ./env.sh
