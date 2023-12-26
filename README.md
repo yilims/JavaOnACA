@@ -17,6 +17,3 @@
 | `$BP_JAVA_INSTALL_NODE`                | Configure whether to request that `yarn` and `node` are installed by another buildpack**. If set to `true`, the buildpack will check the app root or path set by `$BP_NODE_PROJECT_PATH` for either: A `yarn.lock` file, which requires that `yarn` and `node` are installed or, a `package.json` file, which requires that `node` is installed. | `false` |
 | `$BP_NODE_PROJECT_PATH`                | Configure a project subdirectory to look for `package.json` and `yarn.lock` files | |
 | `$ORYX_DISABLE_TELEMETRY`              | Configure whether to disable telemetry collection. | `false` |
-| `$ORYX_LAYER_EXPORT_ENABLED`           | the arguments to enable debug logging | `false` |
-| `$ORYX_LAYER_EXPORT_OUTPUT`            | the arguments for debug log output, default to console, can be changed to directory | `false` |
-| `$ORYX_TELEMETRY_OUTPUT`               | the arguments to enable debug logging | `false` |
